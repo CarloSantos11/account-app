@@ -1,0 +1,26 @@
+<div class="form-container" style="border: black 1px solid">
+  <%= form_with(model: user, id: dom_id(user)) do |form| %>
+    <% if user.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(user.errors.count, "error") %> prohibited this account from being saved:</h2>
+
+        <ul>
+          <% user.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="account-field">
+      <%= form.label :document %>
+      <div class="form-input">
+      <%= form.file_field :document %>
+      </div>
+    </div>
+
+    <div class="actions account-field">
+      <%= form.submit %>
+    </div>
+  <% end %>
+</div>
