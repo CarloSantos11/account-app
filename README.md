@@ -103,8 +103,12 @@ Factory Bot
 - logout
 - clean UI
 - Assign multiple users to an account
-- Bootstrap Library Admin UTIL
+- Bootstrap Library Admin UTIL (completed)
 
 ## Issues
 
 - Current issue: Hotwire is not broadcasting the changes made to Accounts (resolved)
+
+## Where Did We Leave Off?
+---
+Installing active record. Creating an attachment for user. 
